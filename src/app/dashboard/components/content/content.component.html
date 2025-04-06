@@ -1,15 +1,15 @@
-<div>
+<div >
     <div  class="relative">
         <p-speeddial class="absolute top-1 left-20" [model]="items"  direction="right" [style]="{ position: 'absolute', left: 'calc(50% - 2rem)', bottom: 0 }" />
     </div>
-    <div class="mt-19">
+    <div class="mt-16">
         <p-carousel [value]="products" [numVisible]="4" [numScroll]="1" [responsiveOptions]="responsiveOptions" >
             <ng-template let-product #item>
                 <div class="border border-surface-200  rounded m-2 p-4">
                     <div class="mb-4">
                         <div class="relative mx-auto">
                             <img src="../images/{{ product.image }}" [alt]="product.name" class="w-full rounded-border" />
-                            <a class="absolute  top-[-0.7px] left-161 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white "> <i class="pi pi-arrow-down-left "></i> </a>
+                            <a class="absolute  top-[-0.5px] left-166.5 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white "> <i class="pi pi-arrow-down-left "></i> </a>
                         </div>
                     </div>
                      <!-- <div class="mb-1 text-xs">{{ product.name }}</div> -->
@@ -35,7 +35,7 @@
                     <div class="mb-4">
                         <div class="relative mx-auto">
                             <img src="../images/{{ product.image }}" [alt]="product.name" class="w-full rounded-border" />
-                            <a class="  absolute top-[-0.7px] left-161 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white"> <i class=" pi pi-arrow-down-left"></i> </a>
+                            <a class="  absolute top-[-0.5px] left-166.5 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white"> <i class=" pi pi-arrow-down-left"></i> </a>
                         </div>
                     </div>
                     <!-- <div class="mb-1 text-xs">{{ product.name }}</div> -->

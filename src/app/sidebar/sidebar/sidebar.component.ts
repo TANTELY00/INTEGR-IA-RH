@@ -12,7 +12,8 @@ import { RouterModule, Routes } from '@angular/router';
   selector: 'app-sidebar',
   imports: [ButtonModule,PasswordModule,MenuModule,BadgeModule,AvatarModule,CommonModule,RouterModule],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+  styleUrl: './sidebar.component.css',
+
 })
 export class SidebarComponent {
   items: MenuItem[] = [
@@ -39,11 +40,9 @@ export class SidebarComponent {
     // }
   ];
 
-  isSidebarVisible: boolean = false;
-  teste : string = "block";
-
-  // Méthode pour basculer l'affichage du menu
-  toggleSidebar() {
-    this.isSidebarVisible = !this.isSidebarVisible;
+  afficher : boolean = false;
+  affiche(){
+    this.afficher = !this.afficher;
   }
+
 }
