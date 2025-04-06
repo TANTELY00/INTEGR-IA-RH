@@ -1,0 +1,40 @@
+<p-menu  [model]="items" styleClass="w-full h-[100vh] shadow rounded border border-gray-200 flex flex-col ">
+  
+    <ng-template #start >
+      <span class="inline-flex  items-center gap-2 px-4 py-3 mt-1 ">
+        <span class="text-xl font-semibold">
+          RH <span class="text-primary"> ASSISTANT</span>
+        </span>
+        <i class="pi pi-bars text-2xl cursor-pointer" (click)="toggleSidebar() "></i>
+      </span>
+      <hr class="border-gray-200 dark:border-gray-700 w-[95%] mx-auto">
+    </ng-template>
+  
+    <!-- <ng-template #submenuheader let-item>
+      <span class="text-primary font-bold px-4 pt-2">{{ item.label }}</span>
+    </ng-template> -->
+  
+    <ng-template #item let-item >
+      <a pRipple class="flex cursor-pointer items-center px-4 py-2 mt-4 hover:bg-gray-100 rounded transition" [routerLink]="item.link">
+        <span [class]="item.icon"></span>
+        <span class="ml-2">{{ item.label }}</span>
+        <p-badge *ngIf="item.badge" class="ml-auto" [value]="item.badge" />
+        <span *ngIf="item.shortcut" class="ml-auto border border-gray-300 rounded bg-gray-100 text-gray-600 text-xs p-1">
+          {{ item.shortcut }}
+        </span>
+      </a>
+    </ng-template>
+  
+    <ng-template #end >
+        <hr class="border-gray-200  w-[95%] mx-auto ">
+        <button pRipple class="flex cursor-pointer items-center gap-3 p-4 hover:bg-gray-100 dark:hover:bg-gray-800 w-full ">
+            <img src="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" alt="user" class="w-8 h-8 rounded-full">
+            <div class="text-left">
+            <div class="font-bold">Rossa</div>
+            <div class="text-sm text-gray-500">Admin</div>
+            </div>
+        </button>
+    </ng-template>
+  
+  </p-menu>
+  
