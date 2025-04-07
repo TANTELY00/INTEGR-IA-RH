@@ -22,8 +22,8 @@ export class SidebarComponent {
       items: [
         { label: 'Dashdoard', icon: 'pi pi-objects-column', shortcut: '⌘+N' ,link:'dash'},
         { label: 'Offer', icon: 'pi pi-megaphone', shortcut: '⌘+S',link:'offer' },
-        { label: 'Analys', icon: 'pi pi-check', shortcut: '⌘+S',link:'analys' },
-        { label: 'Interview', icon: 'pi pi-question-circle', shortcut: '⌘+O' ,link:'interview' },
+        { label: 'Analys', icon: 'pi pi-check', shortcut: '⌘+T',link:'analys' },
+        { label: 'Interview', icon: 'pi pi-question-circle', shortcut: '⌘+K' ,link:'interview' },
         { label: 'Report', icon: 'pi pi-inbox', badge: '2' ,link:'report' },
         { label: 'Notification', icon: 'pi pi-bell', badge: '2' ,link:'notify' },
         { label: 'Settings', icon: 'pi pi-cog', shortcut: '⌘+O' ,link:'settings' },
