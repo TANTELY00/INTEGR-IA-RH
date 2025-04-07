@@ -1,0 +1,24 @@
+<div class="flex w-full mt-5">
+
+    <form [formGroup]="formGroup" class="card flex">
+        <p-multiselect 
+          [options]="cities" 
+          formControlName="selectedCities" 
+          optionLabel="name" 
+          placeholder="Select Offers" 
+          [maxSelectedLabels]="3" 
+          styleClass="w-[540px]" />
+    </form>
+      
+    <!-- Afficher les villes sélectionnées -->
+    <div *ngIf="formGroup.get('selectedCities')?.value.length">
+    <p>Selected Offers:</p>
+    <ul>
+        <li *ngFor="let city of formGroup.get('selectedCities')?.value">{{ city.name }}</li>
+    </ul>
+    </div>
+    
+    <!-- Submit Form -->
+    <!-- <button (click)="submit()">Submit</button> -->
+
+</div>

@@ -1,0 +1,9 @@
+<div class="flex flex-col items-center justify-center p-4">
+  <p-steps 
+    [model]="items" 
+    [readonly]="false" 
+    [activeIndex]="activeIndex" 
+    (activeIndexChange)="onActiveIndexChange($event)" 
+    class="w-[100%]"
+  ></p-steps>
+</div>

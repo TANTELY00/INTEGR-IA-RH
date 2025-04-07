@@ -1,0 +1,17 @@
+<form [formGroup]="formGroup">
+    <textarea
+      id="text"
+      pTextarea
+      formControlName="text"
+      placeholder="Ask your question to select the best candidates...."
+      class="w-[540px] h-[80px] border-2 border-gray-300 rounded-lg p-2 focus:outline-none focus:border-primary"
+    ></textarea>
+</form>
+
+<div class="flex justify-end mt-3">
+    <p-button   label="Prompt" icon="pi pi-send" type="button" (click)="submit()"></p-button>
+</div>
+
+  
+  <!-- <p *ngIf="formGroup.get('text')?.value">Valeur : {{ formGroup.get('text')?.value }}</p> -->
+  
